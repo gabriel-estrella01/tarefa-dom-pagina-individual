@@ -1,0 +1,438 @@
+/*-------------------Estilização Global-------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Alata", serif;
+}
+
+/*-------------------Fim da Estilização Global-------------------*/
+
+
+
+/*-------------------Estilização Header-------------------*/
+
+header {
+    height: 109px;
+    background-color: #012E40;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 273px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFEFE0;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+header nav a {
+    color: #FFEFE0;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+header nav a:hover {
+    color: #FFEFE0;
+    transform: scale(1.1);
+    text-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+header nav
+
+header nav a:active {
+    color: #c5b6a8;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*-------------------Fim da Estilização Header-------------------*/
+
+
+
+/*-------------------Estilização Main-------------------*/
+
+body{
+    background-color: #025A65;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apresentacao {
+    background-color: #024959;
+    width: 100%;
+    height: 247px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding-top: 109px;
+    padding-bottom: 109px;
+}
+
+.apresentacao img {
+    width: 247px;
+    height: 247px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.apresentacao div {
+    color: #FFEFE0;
+    width: 614px;
+    text-align: justify;
+}
+
+.apresentacao div h3 {
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+.apresentacao div p {
+    font-size: 16px;
+}
+
+.listas {
+    background-color: #025A65;
+    color: #FFEFE0;
+    width: 100%;
+    height: 289px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.hobbies h3, .top-5 h3 {
+    margin-bottom: 2vh;
+    font-size: 20px;
+}
+
+.hobbies h3 {
+    text-align: right;
+}
+
+.hobbies ul, .top-5 ol {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2%;
+}
+
+.hobbies ul li, .top-5 ol li {
+    background-color: #012E40;
+    text-align: center;
+    border-radius: 5px;
+    width: 104px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.rank {
+    position: absolute;
+    top: 0%;
+    left: 4%;
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    height: 44px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.top-5 ol li:nth-child(1) .rank {
+    background-color: gold;
+    width: 19px;
+}
+
+.top-5 ol li:nth-child(2) .rank {
+    background-color: silver;
+    width: 19px;
+}
+
+.top-5 ol li:nth-child(3) .rank {
+    background-color: #cd7f32;
+    width: 19px;
+}
+
+.hobbies ul li img, .top-5 ol li img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.hobbies ul li span, .top-5 ol li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.feedback {
+    background-color: #025A65;
+    color: #FFEFE0;
+    width: 100%;
+    height: 289px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback h3 {
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+.feedback .form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap:20px;
+}
+
+.feedback .form input, .form textarea {
+    width: 1128px;
+    height: 56px;
+    background-color: #025A65;
+    border: 1px solid #3CA6A6;
+    border-radius: 5px;
+    color: #FFEFE0;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.feedback .form input::placeholder, .form textarea::placeholder {
+    font-size: 16px;
+    color: #FFEFE0;
+}
+
+.feedback button {
+    width: 127px;
+    height: 37px;
+    background-color: #024959;
+    color: #FFEFE0;
+    border: none;
+    border-radius: 5px;
+}
+
+.feedback button:hover {
+    border: 1px solid #FFEFE0;
+}
+
+.feedback button:active {
+    color: #3CA6A6;
+    border: 1px solid #3CA6A6;
+}
+
+.comentarios {
+    width: 61%;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #025A65 ;
+  }
+  
+  .comentarios div {
+    background-color: #024959;
+    color: #FFEFE0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  
+  .comentarios h3 {
+    margin-top: 0;
+    margin-bottom: 1vh;
+  }
+  
+  .comentarios p {
+    margin: 0;
+    white-space: normal;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  h3, p {
+    word-break: break-word;
+  }
+
+/*-------------------Fim da Estilização Main-------------------*/
+
+
+
+/*-------------------Estilização Footer-------------------*/
+
+footer {
+    background-color: #012E40;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 273px;
+    position: relative;
+}
+
+footer div  {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+footer a button {
+    width: 162px;
+    height: 38px;
+    background-color: #024959;
+    color: #FFEFE0;
+    border: none;
+    border-radius: 5px;
+}
+
+footer a button:hover{
+    border: 1px solid #FFEFE0;
+}
+
+footer a button:active {
+    color: #3CA6A6;
+    border: 1px solid #3CA6A6;
+}
+
+/*-------------------Fim da Estilização Footer-------------------*/
+
+/*-------------------Responsividade-------------------*/
+
+@media screen and (max-width: 430px){
+
+    header {
+        padding: 28px 28px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    header nav a:hover {
+        color: #FFEFE0;
+        transform: none;
+        box-shadow: none;
+    }
+    
+    header nav a:active {
+        color: #3CA6A6;
+        box-shadow: none;
+    }
+
+    /*------------------------------------------------------------*/
+
+    .apresentacao {
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        width: 430px;
+        height: 100%;
+    }
+
+    .apresentacao div {
+        width: 310px;
+        font-size: 14px;
+    }
+
+    .listas {
+        height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        flex-direction: column;
+    }
+
+    .hobbies h3, .top-5 h3 {
+        margin-bottom: 2vh;
+        padding-left: 2.5vh;
+        font-size: 20px;
+    }
+    
+    .hobbies h3 {
+        text-align: left;
+    }
+    
+    .hobbies ul, .top-5 ol {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8%;
+    }
+
+    .hobbies ul li, .top-5 ol li {
+        flex: 0 0 calc(33.33% - 10px);
+        max-width: 104px;
+        margin-bottom: 5%;
+    }
+
+    .feedback {
+        height: 100%;
+        padding-top: 20px;
+    }
+
+    .feedback .form input, .form textarea {
+        width: 350px;
+    }
+
+    .feedback .form {
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .feedback button {
+        width: 79.08px;
+        height: 37px;
+    }
+
+    .comentarios {
+        width: 95%;
+      }
+
+    /*------------------------------------------------------------*/
+
+    footer{
+        width: 430px;
+        padding: 19px 0px;
+        flex-direction: column-reverse;
+    }
+
+    footer div {
+        padding-top: 30px;
+    }
+}
+
+/*-----------------------------FIM-------------------------------*/
